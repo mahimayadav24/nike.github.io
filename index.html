@@ -1,104 +1,355 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="viewport" content="height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 
 
-    <title>Document</title>
-    <style>
-        ul li {
-            list-style: none;
-        }
-
-        nav ul {
-            float: right;
-        }
-
-        nav ul li {
-            display: inline-block;
-            padding: 20px 20px 20px 20px;
-            margin: -20px 0px 0px 0px;
-        }
-
-        #cheack {
-            float: right;
-            display: none;
-
-        }
-
-        .check_btn {
-            float: right;
-            display: none;
-        }
-
-        nav ul li {
-            text-decoration: none;
-            color: black;
-            font-size: 35px;
-            letter-spacing: 0.03em;
-        }
-
-        @media screen and (max-width: 568px) {
-            nav ul li {
-                display: block;
-            }
-
-            .check_btn {
-                float: right;
-                display: block;
-            }
-
-            ul {
-                position: fixed;
-                top: 50px;
-                left: -150%;
-                bottom: 0;
-                right: 0;
-                text-align: inherit;
-                transition: .5s ease-in-out;
-            }
-
-            #cheack:checked~ul {
-                left: -35px;
-            }
-
-            .Mnu__Icon {
-                font-size: 30px;
-                margin: 10px 20px 10px 20px;
-                background-color: #1C3052;
-                color: white;
-                border-radius: 50%;
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                padding: 15px 17px 15px 17px;
-            }
-        }
-    </style>
+    <title>NIKE</title>
 </head>
 
 <body>
     <section>
-        <nav class="navbar">
-            <input type="checkbox" id="cheack">
-            <label for="cheack" class="check_btn">
-                <i class="fas fa-bars Mnu__Icon"></i>
-            </label>
-            <ul>
-                <li>Home</li>
-                <li>News</li>
-                <li>Contact</li>
-                <li>Blog</li>
-            </ul>
-        </nav>
+        <div class="container Nike__Rows">
+            <div class='Nike__Row'>
+                <div class='Nike__Col'>
+                    <div class='Nike__col__Inside'>
+                        <img id="hero_banner" src="./IMG/main.jpg" alt="">
+                        <img id="img__mobile" src="./IMG/nike-just-do-it2.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="main">
+        <div class="container">
+            <div class='Nike__Row_down'>
+                <div class='Nike__Col_down'>
+                    <div class='Nike__col__Inside_down'>
+                        <h1>YOUR NIKE CONNECTION</h1>
+                        <p>More sport, more inspiration, more Nike!</p>
+                        <div class="button">
+                            <button>
+                                <p style="margin-bottom: 0rem;">Get Your Great</p>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="nike">
+        <div class="container Wrapper__Box__ImG">
+            <div class="text_content">
+                <h2>Trending</h2>
+            </div>
+            <div class='row_user nike_new'>
+                <div class='column_mid'>
+                    <div class='blue_column_mid'>
+                        <img id="down" src="./IMG/left.jpg" alt="">
+                        <div class="set__up">
+                            <p class="text_1"> Suit Up for the Jam - Now Aavilable Only On the Nike App</p>
+                            <div class="learn">
+                                <button class="button_plus">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='column_mid'>
+                    <div class='green_column_mid'>
+                        <img id="right" src="./IMG/right.jpg" alt="">
+                        <div class="set__up">
+                            <p class="text">Rawdacious Pack</p>
+                            <div class="learn">
+                                <button class="button_plus_size">Shop</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="min">
+        <div class="container pink_link">
+            <div class="content_text">
+                <h2>Featured</h2>
+            </div>
+            <div class="row_new_img_2">
+                <div class="column_next_part_2">
+                    <img id="hero_banner_1" src="./IMG/2nd.jfif" alt="">
+                    <img id="img__mobile_1" src="./IMG/2.jfif" alt="">
+                    <div class="next_text_content_1">
+                        <p>Featured Styles</p>
+                        <h2>NEW THIS SEASON</h2>
+                        <div>
+                            <button class="blue_button_1">Shop</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container blue_link">
+        <div class="text_content_2">
+            <h2>The Latest</h2>
+        </div>
+        <div class="row_last">
+            <div class="column_next_1">
+                <img id="a" src="./IMG/new.jpg" alt="">
+                <img id="b" src="./IMG/part2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="btn_class">
+        <h2>NIKE MOVEMENT CHALLANGE: <br> WEEK 2</h2>
+        <P>Conquer this Week`s Challange On the NRC or NTC Apps from 19th-25th July to access the Champions
+            Locker. <br>
+            New member-only products will be added Wekely to the Champions Locker.
+        </P>
+        <div>
+            <button class="week">Start a Run</button>
+            <button class="week">Start a Workout</button>
+        </div>
+    </div>
+    <div class="container link">
+        <div class="text_3">
+            <h2> 50 Years of Swoosh</h2>
+        </div>
+    </div>
+    <section style="padding: 0px 10px 0px 10px;">
+        <div class="container mode inline">
+            <img src="./IMG/air-force-1-07-se-shoe-5BT500.jfif" alt="">
+            <div class="item inline-item"></div>
+            <div class="item inline-item"></div>
+            <img src="./IMG/court-vision-low-shoes-F6vqsg.jfif" alt="">
+            <div class="item inline-item"></div>
+            <img src="./IMG/air-force-1-07-shoes-Wv2j0C.jfif" alt="">
+            <div class="item inline-item"></div>
+            <img src="./IMG/air-max-90-se-shoe-d72VSR.jfif" alt="">
+
+            <img src="./IMG/blazer-low-77-prm-shoe-pnHzBj.jfif" alt="">
+            <div class="item inline-item"></div>
+            <img src="./IMG/court-royale-2-shoes-W4s7w7.jfif" alt="">
+        </div>
+
+    </section>
+    <div class="container user_1">
+        <div class="text_3_1">
+            <h2>More Nike</h2>
+        </div>
+        <div class='row_effect_1'>
+            <div class='column_design_1'>
+                <div class='user_column_1'>
+                    <img src="./IMG/3sec.jpg" alt="">
+
+                    <div class="set__up_1">
+                        <div class="learn_1">
+                            <button class="button_plus_size_1">Men`s</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class='column_design_1'>
+                <div class='system_column_1'>
+                    <img src="./IMG/3section.jpg" alt="">
+                    <div class="set__up_1">
+                        <div class="learn_1">
+                            <button class="button_plus_size_1">Women`s</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='column_design_1'>
+                <div class='basic_column_1'>
+                    <img src="./IMG/3sec---tion.jpg" alt="">
+                    <div class="set__up_1">
+                        <div class="learn_1">
+                            <button class="button_plus_size_1">Kids`</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container user_last">
+        <div class='row_effect_last'>
+            <div class='column_design_last'>
+                <div class='user_column_last'>
+                    <h4>Icons</h4>
+                    <div class="container_follow">
+                        <ul>
+                            <li><a href="">Lorem, ipsum</a></li>
+                            <li><a href="">Lorem, ipsum</a></li>
+                            <li><a href="">Lorem, ipsum</a></li>
+                            <li><a href="">Lorem, ipsum</a></li>
+
+                        </ul>
+                        <ul class="slide">
+                            <li><a href="">Lorem, ipsum</a></li>
+                            <li><a href="">Lorem, ipsum</a></li>
+                            <li><a href="">Lorem, ipsum</a></li>
+                            <li><a href="">Lorem, ipsum</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class='column_design_last'>
+                <div class='system_column_last'>
+                    <h4>Shoes</h4>
+                    <div class="container_follow">
+                        <ul>
+                            <li><a href="">Lorem, ipsum</a></li>
+                            <li><a href="">Lorem, ipsum</a></li>
+                            <li><a href="">Lorem, ipsum</a></li>
+                            <li><a href="">Lorem, ipsum</a></li>
+
+                        </ul>
+                        <ul class="slide">
+                            <li><a href="">Lorem, ipsum</a></li>
+                            <li><a href="">Lorem, ipsum</a></li>
+                            <li><a href="">Lorem, ipsum</a></li>
+                            <li><a href="">Lorem, ipsum</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class='column_design_last'>
+                <div class='basic_column_last'>
+                    <h4>Clothing</h4>
+                    <div class="container_follow">
+                        <ul>
+                            <li><a href="">Lorem, ipsum</a></li>
+                            <li><a href="">Lorem, ipsum</a></li>
+                            <li><a href="">Lorem, ipsum</a></li>
+                            <li><a href="">Lorem, ipsum</a></li>
+
+                        </ul>
+                        <ul class="slide">
+                            <li><a href="">Lorem, ipsum</a></li>
+                            <li><a href="">Lorem, ipsum</a></li>
+                            <li><a href="">Lorem, ipsum</a></li>
+                            <li><a href="">Lorem, ipsum</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class='column_design_last'>
+                <div class='basic_column_last_1'>
+                    <h4>Kids`</h4>
+                    <div id="container_hover">
+                        <div class="container_follow">
+                            <ul>
+                                <li><a href="">Lorem, ipsum</a></li>
+                                <li><a href="">Lorem, ipsum</a></li>
+                                <li><a href="">Lorem, ipsum</a></li>
+                                <li><a href="">Lorem, ipsum</a></li>
+
+                            </ul>
+                            <ul class="slide">
+                                <li><a href="">Lorem, ipsum</a></li>
+                                <li><a href="">Lorem, ipsum</a></li>
+                                <li><a href="">Lorem, ipsum</a></li>
+                                <li><a href="">Lorem, ipsum</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="used_for_section">
+        <div class="container user_f">
+            <div class='row_effect_f' style="padding: 50px 0px 0px 0px;">
+                <div class='column_design_f'>
+                    <div class='user_column_f'>
+                        <p class="z" style="color: white; ">FIND A STORE</p>
+                        <ul>
+                            <li style="color: white;">Lorem, ipsum.lorem2 </li>
+                            <li style="color: white;">Lorem, ipsum.lorem2 </li>
+                            <li style="color: white;">Lorem, ipsum.lorem2 </li>
+                            <li style="color: white;">Lorem, ipsum.lorem2 </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class='column_design_f'>
+                    <div class='system_column_f'>
+                        <p class="z" style="color: white;">GET HELP</p>
+                        <ul>
+                            <li>Lorem, ipsum.lorem2</li>
+                            <li>lorem2</li>
+                            <li>lorem2</li>
+                            <li>lorem2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='column_design_f'>
+                    <div class='basic_column_f'>
+                        <p class="z" style="color: white;">About Nike</p>
+                        <ul>
+                            <li>Lorem, ipsum.lorem2</li>
+                            <li>lorem2</li>
+                            <li>lorem2</li>
+                            <li>lorem2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='column_design_f'>
+                    <div class='basic_column_f_1'>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>
